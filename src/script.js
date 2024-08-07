@@ -126,7 +126,7 @@ function Tick() {
     const time = Date.now() * 0.001;
 
     for (let i = 0; i < stars.length; i++) {
-        const speed = (1 - stars[i].ellipseMajor / 50) / 2; // Adjust speed based on distance
+        const speed = (1 - stars[i].ellipseMajor / 50)/1.7; // Adjust speed based on distance
         const pos = stars[i].sample(time * 360 * -speed);
         array[i * 3] = pos.x;
         array[i * 3 + 1] = pos.y;
